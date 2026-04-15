@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Primera Web</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <h1>¡Hola! Mi web está en GitHub Pages</h1>
+</body>
+</html>
+
+¿Quieres que te dé la estructura completa recomendada según el tipo de web que vas a hacer?
+Dime qué tipo de página quieres hacer:
+
+Portfolio personal
+Web de una sola página (One Page)
+Blog
+Tienda / Landing page
+Solo HTML + CSS básico
+
+Y te doy la estructura exacta + archivos recomendados. 😊5,9sFastCreame un archivo index para mi pagina web con un estilo armonico y elegante entre negros y colores pastel con nombre de pagina aula del saber le puedes agregar un libro al lado del nombe aula del saber, el inicioAquí tienes un archivo index.html completo, moderno, elegante y armónico para tu página web "Aula del Saber".
+El diseño usa un fondo negro profundo con acentos en colores pastel suaves (rosa suave, lavanda, azul claro y beige), tipografía elegante, mucho espacio en blanco y un icono de libro al lado del nombre.
+HTML<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula del Saber</title>
+    <style>
+        :root {
+            --negro: #0f0f0f;
+            --gris-oscuro: #1a1a1a;
+            --rosa-pastel: #f8c1d4;
+            --lavanda-pastel: #d4c1f8;
+            --azul-pastel: #a1d4f8;
+            --beige-pastel: #f5e8d3;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background-color: var(--negro);
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--gris-oscuro), var(--negro));
+            padding: 1.5rem 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(248, 193, 212, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--rosa-pastel);
+        }
+
+        .book-icon {
+            font-size: 2rem;
+            margin-right: 12px;
+            color: var(--lavanda-pastel);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--rosa-pastel);
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(15,15,15,0.85), rgba(15,15,15,0.9)), 
+                        url('https://source.unsplash.com/random/1920x1080/?books,library') center/cover no-repeat;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 4.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .hero .subtitle {
+            font-size: 1.6rem;
+            color: var(--beige-pastel);
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--rosa-pastel);
+            color: #0f0f0f;
+            padding: 14px 40px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .cta-button:hover {
+            background: var(--lavanda-pastel);
+            transform: translateY(-4px);
+        }
+
+        section {
+            padding: 100px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2.8rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--beige-pastel);
+        }
+
+        /* Puedes agregar más secciones aquí (Cursos, Sobre nosotros, etc.) */
+
+        footer {
+            background: var(--gris-oscuro);
+            padding: 60px 5% 30px;
+            text-align: center;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <span class="book-icon">📖</span>
+                Aula del <span>Saber</span>
+            </a>
+            <div class="nav-links">
+                <a href="#">Inicio</a>
+                <a href="#">Cursos</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Blog</a>
+                <a href="#">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Aula del Saber</h1>
+            <p class="subtitle">Donde el conocimiento se encuentra con la elegancia</p>
+            <a href="#" class="cta-button">Explorar Cursos</a>
+        </div>
+    </section>
+
+    <!-- Sección de bienvenida (puedes expandirla) -->
+    <section>
+        <h2>Bienvenido a tu espacio de aprendizaje</h2>
+        <p style="text-align: center; font-size: 1.3rem; max-width: 700px; margin: 0 auto; color: #bbb;">
+            En <strong>Aula del Saber</strong> combinamos contenido de calidad con un ambiente sereno y sofisticado 
+            para que tu experiencia de aprendizaje sea inolvidable.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Aula del Saber. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
