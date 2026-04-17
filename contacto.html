@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Aula del Saber</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap');
+
+        :root {
+            --lavender: #f3e8ff;
+            --soft-pink: #ffe4f0;
+            --beige: #f9f4eb;
+            --soft-purple: #d4b3ff;
+            --text-color: #4a3f5a;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', system-ui, sans-serif;
+            background: linear-gradient(135deg, #f9f4eb 0%, #f3e8ff 100%);
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        .header {
+            background: linear-gradient(to right, #d4b3ff, #ffe4f0);
+            padding: 3.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(212, 179, 255, 0.2);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 50px 40px;
+            background: rgba(255, 255, 255, 0.96);
+            border-radius: 24px;
+            box-shadow: 0 15px 40px rgba(212, 179, 255, 0.15);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.9rem;
+            color: #6b4e9e;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: #8a6bc4;
+            margin-bottom: 40px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            background: #fff0f7;
+            padding: 22px 25px;
+            border-radius: 18px;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .icon {
+            font-size: 2.2rem;
+            width: 60px;
+        }
+
+        .whatsapp { color: #25D366; }
+        .email { color: #6b4e9e; }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: #6b4e9e;
+            font-size: 1.7rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.08rem;
+            color: #555;
+        }
+
+        .fb-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(to right, #1877f2, #3b5998);
+            color: white;
+            padding: 16px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            box-shadow: 0 8px 20px rgba(24, 119, 242, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .fb-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 25px rgba(24, 119, 242, 0.4);
+        }
+
+        .emotion-text {
+            font-style: italic;
+            color: #8a6bc4;
+            text-align: center;
+            margin: 35px 0;
+            font-size: 1.15rem;
+        }
+
+        .logo-section {
+            text-align: center;
+            margin: 60px 0 30px 0;
+            padding-top: 30px;
+            border-top: 2px solid #f3e8ff;
+        }
+
+        .logo-section img {
+            max-width: 170px;
+            height: auto;
+            filter: drop-shadow(0 4px 10px rgba(107, 78, 158, 0.2));
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 20px 30px;
+            color: #8a6bc4;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px 15px;
+                padding: 35px 25px;
+            }
+            h1 {
+                font-size: 2.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Contáctanos</h1>
+        <p class="subtitle">Estamos aquí para ayudarte a encontrar el conocimiento que buscas</p>
+    </div>
+
+    <div class="container">
+        <p class="emotion-text">
+            Tu próximo paso hacia el aprendizaje empieza con un simple mensaje ❤️
+        </p>
+
+        <div class="contact-info">
+            <!-- WhatsApp -->
+            <div class="contact-item">
+                <span class="icon whatsapp">📱</span>
+                <div>
+                    <h2>WhatsApp</h2>
+                    <p><strong>+57 313 680 8206</strong></p>
+                    <p>Escríbenos cualquier duda. Respondemos rápido.</p>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-item">
+                <span class="icon email">✉️</span>
+                <div>
+                    <h2>Correo Electrónico</h2>
+                    <p><strong>markadams2427@gmail.com</strong></p>
+                    <p>Te responderemos en las próximas 24 horas.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Encuéntranos en Facebook</h2>
+        <p>Síguenos para ver novedades, promociones y contenido exclusivo sobre nuestros cursos.</p>
+        
+        <a href="https://www.facebook.com/profile.php?id=100077878920356" 
+           target="_blank" 
+           class="fb-button">
+            <span>🌟</span>
+            Visitar Aula del Saber en Facebook
+        </a>
+
+        <p class="emotion-text">
+            Cada mensaje que recibimos nos llena de ilusión por seguir creando materiales que transformen vidas.
+        </p>
+
+        <!-- Logo con libro y bombillo -->
+        <div class="logo-section">
+            <img src="https://i.ibb.co/0jKzXzY/651778575-122116311021235186-2560565412443941127-n.jpg" 
+                 alt="Aula del Saber - Logo con libro y bombillo">
+            <p style="margin-top: 15px; color: #8a6bc4; font-style: italic;">
+                Aula del Saber
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Aula del Saber © 2026 • Todos los derechos reservados</p>
+    </div>
+</body>
+</html>
