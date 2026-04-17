@@ -1,0 +1,209 @@
+Aquí tienes el HTML completo para la sección "Cursos Destacados" con un diseño elegante en colores oscuros (modo oscuro premium), perfecto para resaltar los cursos.
+HTML<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos Destacados | Aula del Saber</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', system-ui, sans-serif;
+            background: #0f0f0f;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(to right, #1a1a2e, #16213e);
+            padding: 4rem 0 3rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2rem;
+            color: #d4b3ff;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.25rem;
+            color: #aaaaaa;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .intro-text {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 60px;
+            font-size: 1.15rem;
+            color: #bbbbbb;
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .course-card {
+            background: #1a1a2e;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            transition: all 0.4s ease;
+            border: 1px solid #2a2a4a;
+        }
+
+        .course-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 40px rgba(212, 179, 255, 0.15);
+            border-color: #d4b3ff;
+        }
+
+        .course-image {
+            height: 240px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .course-image::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+            background: linear-gradient(transparent, #1a1a2e);
+        }
+
+        .course-info {
+            padding: 25px;
+        }
+
+        .course-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.55rem;
+            color: #f0f0f0;
+            margin-bottom: 12px;
+            min-height: 60px;
+        }
+
+        .course-description {
+            color: #aaaaaa;
+            font-size: 1.02rem;
+            margin-bottom: 22px;
+            min-height: 110px;
+            line-height: 1.5;
+        }
+
+        .price {
+            font-size: 1.45rem;
+            font-weight: 600;
+            color: #90ff9e;
+            margin-bottom: 18px;
+            display: block;
+        }
+
+        .btn-buy {
+            display: inline-block;
+            background: linear-gradient(to right, #6b4e9e, #8a6bc4);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: all 0.3s ease;
+            width: 100%;
+            text-align: center;
+        }
+
+        .btn-buy:hover {
+            background: linear-gradient(to right, #8a6bc4, #a68eff);
+            transform: scale(1.03);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.6rem;
+            }
+            .course-card {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Cursos Destacados</h1>
+        <p>Materiales premium en PDF • Aprende con calidad y estilo</p>
+    </div>
+
+    <div class="container">
+        <div class="intro-text">
+            Descubre nuestros cursos más solicitados. Cada uno ha sido creado con dedicación profesional para ofrecerte una experiencia de aprendizaje clara, hermosa y efectiva.
+        </div>
+
+        <div class="courses-grid">
+            
+            <!-- Curso 1 -->
+            <div class="course-card">
+                <div class="course-image" style="background-image: url('https://via.placeholder.com/600x400/1a1a2e/ffffff?text=Imagen+Curso+1');"></div>
+                <div class="course-info">
+                    <h3 class="course-name">Aquí va el nombre del curso</h3>
+                    <p class="course-description">Aquí puedes escribir una breve descripción del curso. Explica qué aprenderá el alumno y por qué es valioso.</p>
+                    <span class="price">$00.000</span>
+                    <a href="#" class="btn-buy">Comprar PDF</a>
+                </div>
+            </div>
+
+            <!-- Curso 2 -->
+            <div class="course-card">
+                <div class="course-image" style="background-image: url('https://via.placeholder.com/600x400/1a1a2e/ffffff?text=Imagen+Curso+2');"></div>
+                <div class="course-info">
+                    <h3 class="course-name">Aquí va el nombre del curso</h3>
+                    <p class="course-description">Aquí puedes escribir una breve descripción del curso. Explica qué aprenderá el alumno y por qué es valioso.</p>
+                    <span class="price">$00.000</span>
+                    <a href="#" class="btn-buy">Comprar PDF</a>
+                </div>
+            </div>
+
+            <!-- Curso 3 -->
+            <div class="course-card">
+                <div class="course-image" style="background-image: url('https://via.placeholder.com/600x400/1a1a2e/ffffff?text=Imagen+Curso+3');"></div>
+                <div class="course-info">
+                    <h3 class="course-name">Aquí va el nombre del curso</h3>
+                    <p class="course-description">Aquí puedes escribir una breve descripción del curso. Explica qué aprenderá el alumno y por qué es valioso.</p>
+                    <span class="price">$00.000</span>
+                    <a href="#" class="btn-buy">Comprar PDF</a>
+                </div>
+            </div>
+
+            <!-- Curso 4 -->
+            <div class="course-card">
+                <div class="course-image" style="background-image: url('https://via.placeholder.com/600x400/1a1a2e/ffffff?text=Imagen+Curso+4');"></div>
+                <div class="course-info">
+                    <h3 class="course-name">Aquí va el nombre del curso</h3>
+                    <p class="course-description">Aquí puedes escribir una breve descripción del curso. Explica qué aprenderá el alumno y por qué es valioso.</p>
+                    <span class="price">$00.000</span>
+                    <a href="#" class="btn-buy">Comprar PDF</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
